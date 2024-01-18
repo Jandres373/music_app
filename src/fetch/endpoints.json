@@ -1,0 +1,11 @@
+{
+  "users": {
+    "all": "/users",
+    "me": "/users/me"
+  },
+  "projects": {
+    "all": "/projects",
+    "mine": "/projects/mine",
+    "collaborations": "/projects/collaborations"
+  }
+}

@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Navbar from '@/components/julian/navbar/Navbar'
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 

@@ -4,6 +4,7 @@ import '@/styles/globals.css'
 import { ThemeProvider } from '@/providers/theme.provider'
 import { Toaster } from '@/components/ui/toaster'
 import Script from 'next/script'
+import '../styles/globals.css'
 
 
 export const metadata: Metadata = {

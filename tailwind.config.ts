@@ -7,7 +7,6 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    './node_modules/keep-react/**/*.{js,jsx,ts,tsx}',
   ],
   prefix: '',
   theme: {
@@ -80,7 +79,7 @@ const config = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-  presets: [require('keep-react/preset')],
+  presets: [],
 } satisfies Config
 
 export default config

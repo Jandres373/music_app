@@ -1,15 +1,13 @@
-import { Poppins } from 'next/font/google'
+import {Poppins} from 'next/font/google'
 
-//?  Poppins 
-const poppinsThin = Poppins({ subsets: ['latin'], weight: '400' })
-const poppinsRegular = Poppins({ subsets: ['latin'], weight: '500' })
-const poppinsBold = Poppins({ subsets: ['latin'], weight: '600' })
-const poppinsExtraBold = Poppins({ subsets: ['latin'], weight: '800' }) 
+const pop_title = Poppins({weight:"800", subsets: ["latin"]})
+const pop_subtitle = Poppins({weight:"700", subsets: ["latin"]})
+const pop_regular = Poppins({weight:"500", subsets: ["latin"]})
+const pop_thin = Poppins({weight:"400", subsets: ["latin"]})
 
 export const poppins = {
-  thin: poppinsThin,
-  regular: poppinsRegular,
-  subtitle: poppinsBold,
-  title: poppinsExtraBold
+  title: pop_title,
+  subtitle: pop_subtitle,
+  regular: pop_regular,
+  thin: pop_thin
 }
-

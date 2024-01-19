@@ -1,40 +1,24 @@
-import type { Metadata } from 'next'
-import {poppins} from '@/styles/fonts'
-import '@/styles/globals.css'
-import { ThemeProvider } from '@/providers/theme.provider'
-import { Toaster } from '@/components/ui/toaster'
-import Script from 'next/script'
-import '../styles/globals.css'
-
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "../styles/globals.css";
+import { poppins } from "@/styles/fonts";
 
 export const metadata: Metadata = {
-  title: 'CoCode 2.0',
-  description: 'Colaborate and make real your ideas with CoCode.',
-}
+  title: "Music App",
+  description: "Music App",
+};
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
-  //jsx
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className={poppins.regular.className}>
-        <ThemeProvider
-          themes={['pink', 'red', 'blue', 'light', 'dark']}
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main className="w-full min-h-[99svh]">
-            {children}
-            <Toaster />
-          </main>
-          <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" />
-        </ThemeProvider>
+      <body className={`${poppins.regular.className} "w-full h-screen grid grid-cols-12 grid-rows-12`} >
+        <nav className="bg-secondary text-secondary-foreground row-span-12 col-span-2">sidebar</nav>
+        <main className="row-span-12 col-span-10">{children}</main>
       </body>
     </html>
-  )
+  );
 }

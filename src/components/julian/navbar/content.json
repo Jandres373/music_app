@@ -1,3 +1,37 @@
 {
-  "autoreference": true
+  "links": [
+    {
+      "id": 1,
+      "name": "music",
+      "link": "#music",
+      "displayName": "MUSIC"
+    },
+    {
+      "id": 2,
+      "name": "live",
+      "link": "#live",
+      "displayName": "LIVE"
+    },
+    {
+      "id": 3,
+      "name": "podcast",
+      "link": "#podcast",
+      "displayName": "PODCAST"
+    }
+  ],
+  "profileCard": {
+    "name": "User"
+  },
+  "icons": [
+    {
+      "name": "notifications",
+      "link": "",
+      "icon": "bell"
+    },
+    {
+      "name": "settings",
+      "link": "",
+      "icon": "cog"
+    }
+  ]
 }

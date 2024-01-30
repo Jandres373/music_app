@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { poppins } from "@/styles/fonts";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Music App",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${poppins.regular.className} "w-full h-screen grid grid-cols-12 grid-rows-12`} >
         <nav className="bg-secondary text-secondary-foreground row-span-12 col-span-2">sidebar</nav>
         <main className="row-span-12 col-span-10">{children}</main>
+        <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"/>
       </body>
     </html>
   );

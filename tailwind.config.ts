@@ -74,7 +74,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require("@material-tailwind/react/utils/withMT")],
 } satisfies Config
 
 export default config

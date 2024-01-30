@@ -1,0 +1,11 @@
+{
+  "sectionName": "Trending New Songs",
+  "currentSong": "Lost Emotion",
+  "artist": "Rion Clarke",
+  "reproductions": "63 Million Plays",
+  "songPicture":"",
+  "buttons": {
+    "cta": "Listen now",
+    "favorite": "heart"
+  }
+}
